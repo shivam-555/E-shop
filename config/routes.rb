@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :products
   resources :line_items
   resources :carts
+  resources :products
   devise_for :users, controllers: {
     registrations: 'registrations'
   }
