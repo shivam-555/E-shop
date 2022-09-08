@@ -4,6 +4,7 @@
 <hr />
 <section class="section">
   <%= render(@cart.line_items) %>
+
   <div class="columns">
     <div class="column">
       <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button is-danger" %>
@@ -14,4 +15,4 @@
       </h4>
     </div>
   </div>
-</section> 
+</section>
