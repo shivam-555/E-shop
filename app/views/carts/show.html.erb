@@ -7,6 +7,9 @@
 
   <div class="columns">
     <div class="column">
+      <%= link_to 'Place Order', new_order_path %>
+    </div>
+    <div class="column">
       <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button is-danger" %>
     </div>
     <div class="column total has-text-right">
